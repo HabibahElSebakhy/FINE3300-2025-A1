@@ -14,7 +14,7 @@ Rapid Weekly Payment: $762.99
 
 ## (c) Exchange Rate Conversion
 
-Using the Bank of Canada exchange rate file, the program read the latest USD/CAD exchange rate (≈ **1 USD = 1.3698 CAD**) and performed the following conversions:
+Using the Bank of Canada exchange rate file, the program reads the latest USD/CAD exchange rate (≈ **1 USD = 1.3698 CAD**) and performed the following conversions:
 
 For an amount of **$100,000 USD → CAD**:
 100000.0 USD = 136980.0 CAD

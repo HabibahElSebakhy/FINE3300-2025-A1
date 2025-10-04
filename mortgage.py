@@ -4,6 +4,8 @@
 # Makes internal data/helpers private where it makes sense
 
 class MortgageCalculator:
+    """Compute mortgage payments under multiple frequencies (Canadian j2)."""
+
     def __init__(self, principal, quoted_rate_percent, years):
         # private data (user shouldn't mutate these after creation)
         self.__principal = float(principal)
@@ -33,12 +35,13 @@ class MortgageCalculator:
     # It computes all six payment types and returns them in a dictionary.
 
     def calculate(self):
-        monthly       = self.__payment(12)
-        semi_monthly  = self.__payment(24)
-        bi_weekly     = self.__payment(26)
-        weekly        = self.__payment(52)
-        rapid_biweek  = monthly / 2.0
-        rapid_weekly  = monthly / 4.0
+        def monthly_payment(self): return self.__payment(12)
+        def semi_monthly_payment(self): return self.__payment(24)
+        def bi_weekly_payment(self): return self.__payment(26)
+        def weekly_payment(self): return self.__payment(52)
+        def rapid_biweekly_payment(self): return self.monthly_payment()/2
+        def rapid_weekly_payment(self): return self.monthly_payment()/4
+
         return {
             "Monthly": monthly,
             "Semi-monthly": semi_monthly,

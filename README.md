@@ -28,12 +28,15 @@ Both parts can be run directly from the terminal.
 ---
 
 ### Part 2 – Exchange Rates
-1. Run the program:
-2. Enter:  
+1. Download the Bank of Canada exchange rate file as a .csv.
+2. Drag and drop the file into the same folder as exchange.rates.py.
+3. Open a terminal in this folder.
+4. Run the program
+5. Enter:  
    - Amount (e.g., 100000)  
    - From currency (`USD` or `CAD`)  
    - To currency (`USD` or `CAD`)  
-3. The program will output the converted value using the latest rate from the CSV file.  
+6. The program will output the converted value using the latest rate from the CSV file.  
 
 
 
